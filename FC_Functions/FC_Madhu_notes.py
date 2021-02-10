@@ -50,7 +50,7 @@ log_hi()
 
 
 
-
+https://www.youtube.com/watch?v=kr0mpwqttM0&t=0s
 
 
 
