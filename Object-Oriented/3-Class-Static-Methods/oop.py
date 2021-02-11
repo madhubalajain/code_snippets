@@ -59,3 +59,13 @@ import datetime
 my_date = datetime.date(2016, 7, 11)
 
 print(Employee.is_workday(my_date))
+
+
+# Normal Function
+Pass instance  as reference - self.
+
+# Class Methods
+Pass class  as reference - cls.
+
+# Static Methods
+Don't pass anything instance or class
