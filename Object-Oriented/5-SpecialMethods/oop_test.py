@@ -17,9 +17,13 @@ class Employee:
 
     def __repr__(self):
         return "Employee('{}', '{}', {})".format(self.first, self.last, self.pay)
+    
+    #   unambiguous Represent of object, used for debugging and logging
 
     def __str__(self):
         return '{} - {}'.format(self.fullname(), self.email)
+    # readable represenatation of object
+    #Both above method are used for display purpose
 
     def __add__(self, other):
         return self.pay + other.pay
@@ -31,6 +35,11 @@ class Employee:
 emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'Employee', 60000)
 
+print(emp_1)
+
 # print(emp_1 + emp_2)
 
 print(len(emp_1))
+
+
+# By implementing the dunder methods, we can change the dafault behavior of it
