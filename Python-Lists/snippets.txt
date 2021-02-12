@@ -12,6 +12,9 @@ print(list_2)
 # print(list_1)
 # print(list_2)
 
+#OUTPUT
+#['Art', 'Math', 'Physics', 'CompSci']
+#['Art', 'Math', 'Physics', 'CompSci']
 
 # Immutable
 # tuple_1 = ('History', 'Math', 'Physics', 'CompSci')
@@ -25,11 +28,29 @@ print(list_2)
 # print(tuple_1)
 # print(tuple_2)
 
+#OUTPUT
+#TUple doesn't support item assignment
+#Not many oprations are supported on TUple as List, as we can't append, remove
+
+
+# Set are unorderd and have no duplicates
 # Sets
 cs_courses = {'History', 'Math', 'Physics', 'CompSci'}
 
 print(cs_courses)
 
+print('Math' in cs_courses) #True 
+# Sets are optimised to do lookup operation as compared to list
+# Also finding what values are shared and not shared with other set
+
+cs_courses = {'History', 'Math', 'Physics', 'CompSci'}
+art_courses = {'History', 'Math', 'Art', 'Design'}
+
+print(cs_courses.intersection(art_courses))
+
+print(cs_courses.difference(art_courses))
+
+print(cs_courses.union(art_courses))
 
 # Empty Lists
 empty_list = []
