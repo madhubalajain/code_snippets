@@ -81,8 +81,32 @@ print(sum(num)) #False
 for item in list:
   print(item)
                  
+for index,item in enumerate(list):
+  print(index, item)
 
-
-
+for index,item in enumerate(list,start=1):
+  print(index, item)
+                 
+#convert the list into String
+list_str = ', '.join(list)
+                 
+#Concert a string into list
+new_list = list_str.split(', ')                 
+                 
+                 
+#######TUPLE#########
+#Tuples are immutable                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
 
 
