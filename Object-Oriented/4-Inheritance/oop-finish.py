@@ -26,7 +26,7 @@ class Developer(Employee):
 
 class Manager(Employee):
 
-    def __init__(self, first, last, pay, employees=None):
+    def __init__(self, first, last, pay, employees=None):  #For immutable Object, it is better not to use like this employees= []
         super().__init__(first, last, pay)
         if employees is None:
             self.employees = []
@@ -57,3 +57,14 @@ mgr_1.add_emp(dev_2)
 mgr_1.remove_emp(dev_2)
 
 mgr_1.print_emps()
+
+
+print(isinstance(mgr_1, Manager))   #true
+
+print(isinstance(mgr_1, Employee)) #true
+
+print((isinatnce(mgr_1, Developer)) #false
+     
+print(issubclass(Manager, Employee)) #true
+      
+      https://www.youtube.com/watch?v=RSl87lqOXDE
