@@ -26,3 +26,50 @@ def outer():
 outer()
 print(x)
 print(a)
+
+
+
+-------------------------------
+x = 'global x'
+
+def test():
+    gobal x
+    x = 'local x'
+    print(x)
+    
+test()
+print(x) 
+
+# local x
+# local x
+
+# if we comment line no. 33 and run the program, then also it works , no error is thrown for line no 41
+
+
+# Built-in
+
+import builtins
+
+print(dir(builtins))
+
+
+-------------
+#enclosing scope
+
+
+def outer()
+    x = 'outer x'
+    
+    def innter()
+        nonlocal x
+        x = 'inner x'
+        print(x)
+    inner()
+    print(x)
+    
+outer()
+
+#Output 
+inner x
+inner x
+
