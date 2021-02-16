@@ -5,6 +5,7 @@ try:
     #     raise Exception
 except IOError as e:
     print('First!')
+    print(e)
 except Exception as e:
     print('Second')
 else:
