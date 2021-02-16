@@ -23,3 +23,26 @@ def days_in_month(year, month):
     return month_days[month]
 
 print(days_in_month(2017, 2))
+
+
+# Keeping your code DRY - don't repeat yourself
+
+
+def student_info(*args, **kwargs)
+    print(args)
+    print(kwargs)
+    
+courses = ['Math','Art'] 
+info = {name : 'John', age : 22}
+
+student_info(courses, info)
+
+#prints
+(['Math','Art'],{name : 'John', age : 22})
+{}
+
+
+student_info(*courses, **info)
+#prints
+('Math','Art')
+{name : 'John', age : 22}
