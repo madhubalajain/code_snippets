@@ -34,6 +34,114 @@ deactivate
 rm -rf project_1
 
 
+#################################################################################
+
+INSTALL ANACONDA
+
+It is used by data scientist and comes with lot of packages installed with it
+
+there is minicoda, which has bootstarp version of it which has essential packages only.
+
+when we install anaconda, it should automatically add to the path.
+
+to check -- run python and you will see it is using the python version from anaconda distribution
+
+Package manager for anaconda is ---conda
+
+we can use conda to install non python packages and dependencies
+
+conda --help
+
+# To list all the packages
+conda list 
+
+
+#virtual env
+#Pass at least one starting packagae
+
+conda create --name my_app flask 
+
+#activate the virtual env
+
+source activate my_app
+pip list
+
+which python
+
+source deactivate
+
+conda create --name my_app2 python=2.7 flask 
+
+conda list env
+
+conda remove --name my_app --all
+
+jupyter notebook
+
+conda export env > environment.yaml
+
+#create environment from that file
+
+conda env create -f environment.yaml
+
+
+# go to the directory where the virtaul environment is created
+
+conda list env
+
+https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+source activate my_app
+
+mkdir -p etc/conda/activate.d
+
+mkdir -p etc/conda/deactivate.d
+
+touch etc/conda/activate.d/env_var.sh
+
+touch etc/conda/deactivate.d/env_var.sh
+
+
+vi etc/conda/activate.d/env_var.sh
+
+#!/bin/sh
+
+export DATABASE_URI="sql://user:pasd@"
+
+vi etc/conda/deactivate.d/env_var.sh
+
+#!/bin/sh
+unset DATABASE_URI
+
+source deactivate
+
+source activate my_app
+
+https://github.com/madhubalajain/code_snippets/blob/master/conda_auto_env.sh
+
+put the above script in the ~/.bash_profile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #create python environment with specific version
 
 virtualenv -p /usr/bin/python2.6 project_2
