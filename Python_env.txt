@@ -1,0 +1,43 @@
+
+virtualenv - you can separate different python environment for different project
+
+pip install virtualenv
+
+mkdir environment
+
+cd environment
+
+virtualenv project_1
+
+#Activate the environment
+
+source project_1/bin/activate
+
+#install packages in the environment
+
+pip install numpy
+
+# find number of packages install
+
+pip list
+
+#Use global site environment within virtual env
+
+pip freeze --local > requirement.txt
+
+# go back to global environment
+
+deactivate
+
+# delete the environment permanently
+
+rm -rf project_1
+
+
+#create python environment with specific version
+
+virtualenv -p /usr/bin/python2.6 project_2
+
+source project_2/bin/activate
+
+pip install -r requirement.txt
