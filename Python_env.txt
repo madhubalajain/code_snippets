@@ -34,6 +34,26 @@ deactivate
 rm -rf project_1
 
 
+##################################
+
+JUPYTER notebook
+
+Markdown can be used
+
+!pip list 
+Runs the bash command
+
+Cell Magics % and %%
+
+%lsmagic
+%pwd
+
+%%HTML to render the txt as HTML
+
+%%timeit - gives the details of how much time taken for excuting the command
+
+https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#introductory-tutorials
+
 #################################################################################
 
 INSTALL ANACONDA
