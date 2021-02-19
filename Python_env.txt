@@ -34,27 +34,7 @@ deactivate
 rm -rf project_1
 
 
-##################################
 
-JUPYTER notebook
-
-Markdown can be used
-
-!pip list 
-Runs the bash command
-
-Cell Magics % and %%
-
-%lsmagic
-%pwd
-
-%%HTML to render the txt as HTML
-
-%%timeit - gives the details of how much time taken for excuting the command
-
-https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#introductory-tutorials
-
-#################################################################################
 
 INSTALL ANACONDA
 
@@ -142,26 +122,6 @@ https://github.com/madhubalajain/code_snippets/blob/master/conda_auto_env.sh
 put the above script in the ~/.bash_profile
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #create python environment with specific version
 
 virtualenv -p /usr/bin/python2.6 project_2
@@ -169,3 +129,60 @@ virtualenv -p /usr/bin/python2.6 project_2
 source project_2/bin/activate
 
 pip install -r requirement.txt
+
+
+##################################
+
+JUPYTER notebook
+
+Markdown can be used
+
+!pip list 
+Runs the bash command
+
+Cell Magics % and %%
+
+%lsmagic
+%pwd
+
+%%HTML to render the txt as HTML
+
+%%timeit - gives the details of how much time taken for excuting the command
+
+https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#introductory-tutorials
+
+#################################################################################
+
+which python3
+
+type python3
+
+echo $PATH
+
+set the path .bash_profile
+
+PATH="/usr/bin:${PATH}"
+export PATH
+
+alias python=python3
+
+
+How to find from where the python is running
+
+python3
+
+import sys
+
+sys.executable
+
+another way to find the location
+
+pip install django
+
+pip show django
+
+make sure the above dependency is in site-package of that python
+
+
+
+
