@@ -184,5 +184,92 @@ pip show django
 make sure the above dependency is in site-package of that python
 
 
+--------------------------------------------------------
+
+
+pipenv
+
+- combine pip and virtualenv
+
+pip install pipenv
+
+navigate to project dir
+
+cd my_project/
+
+pipenv install requests
+
+#activate the env
+pipenv shell
+
+#deactivate the env
+exit
+
+pipenv run python
+
+#run the script
+
+pipenv run python script.py
+
+# install dependecy from requirement file
+
+pipenv install -r requirement.txt
+
+if we want to generate the requirement file
+
+pipenv lock -r
+
+# if we want the dependecy to be available in dev env but not on prod env
+
+pipenv intsall pytest --dev
+
+pipenv uninstall requests
+
+# if you want to change the version of any python dependency, we can edit in pipfile 
+
+pipenv --python 3.6
+
+# To remove the virtual env and recreate from scratch
+
+pipenv --rm
+
+pipenv install
+
+# path to virtual env
+
+pipenv --venv
+
+# to check vulnerability
+
+pipenv check
+
+# dependecy graph
+
+pipenv graph
+
+# to install the packages in prod
+
+pipenv lock
+
+pipenv install --ignore-pipfile
+
+#environment variable
+
+create a new file .env in the same folder
+
+pipenv run python
+
+import os
+
+os.environment['ENV']
+
+
+
+
+
+
+
+
+
 
 
