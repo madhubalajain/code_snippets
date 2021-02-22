@@ -8,6 +8,8 @@ data = json.loads(source)
 
 # print(json.dumps(data, indent=2))
 
+print(len(data['list']['resources']))
+
 usd_rates = dict()
 
 for item in data['list']['resources']:
