@@ -263,6 +263,92 @@ import os
 
 os.environment['ENV']
 
+-----------------------------------------
+
+VENV
+
+works above python 3.3
+No need of seperate installation, comes with python
+
+pip3 list
+
+create python virtual env
+
+python3 -m venv python_proj
+
+
+activate the env
+
+source python_proj/bin/activate
+
+how to find which environment is activated
+
+which python
+
+pip list 
+
+pip install requests
+
+pip list
+
+
+# how to create requirements.txt
+
+pip freeze
+
+take the output of above and put in requirement.txt
+
+pip freeze > requirement.txt
+
+#deactivate the env
+
+deactivate
+
+#delete the environment
+
+rm -rf python_proj
+
+#good way to handle this
+
+create venev in the project itself and have name as venv
+
+mkdir my_project
+
+python3 -m venev my_project/venv
+
+activate
+
+source my_project/venv/bin/activate
+
+now install dependency from requirement.txt
+
+pip install -r requirement.txt
+
+don't put any project file in venv directory
+
+if you want to access the dependency from the global environment
+
+first deactivate the environment and pip list
+
+delete the venv dir rm -rf venv
+
+create the venv
+
+python3 -m venv venv --system-site-packages
+
+source venv/bin/activate
+
+pip list
+
+if you install any package in the venv, it will not affect the global packages
+
+pip install flask
+
+pip list --local
+
+
+
+
 
 
 
