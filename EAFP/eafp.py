@@ -1,4 +1,5 @@
 # Duck Typing and Easier to ask forgiveness than permission (EAFP)
+# Object walk like a duck and quacks like a duck than it is duck
 
 
 class Duck:
